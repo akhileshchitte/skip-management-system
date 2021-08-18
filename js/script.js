@@ -114,7 +114,17 @@ function validate(){
     return false;
   }else{
 //     alert("Login Failed");
-    window.location.relod(true);
+    window.onbeforeunload = function (e) {
+    var e = e || window.event;
+
+    // For IE and Firefox
+    if (e) {
+        e.returnValue = 'Leaving the page';
+    }
+
+    // For Safari
+    return 'Leaving the page';
+};
 //     document.querySelector("#form").action = "https://akhileshchitte.github.io/skip-management-system/";
   }
 }
