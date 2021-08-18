@@ -114,7 +114,7 @@ function validate(){
     return false;
   }else{
     alert("Login Failed");
-//     document.querySelector("#form").action = "https://akhileshchitte.github.io/skip-management-system/";
+    document.querySelector("#form").action = "https://akhileshchitte.github.io/skip-management-system/";
   }
 }
 
