@@ -114,7 +114,7 @@ function validate(){
     return false;
   }else{
     alert("Login Failed");
-    document.querySelector("#form").action = "login.html";
+//     document.querySelector("#form").action = "login.html";
   }
 }
 
