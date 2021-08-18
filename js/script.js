@@ -113,10 +113,6 @@ function validate(){
     alert("Login Successfully");
     return false;
   }else{
-    location.reload();
-//     alert("Login Failed");
-    
-    
     window.onbeforeunload = function (e) {
     var e = e || window.event;
 
