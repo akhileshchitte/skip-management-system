@@ -122,12 +122,13 @@ function validate(){
 
     // For IE and Firefox
     if (e) {
-        e.returnValue = 'Leaving the page';
+//        e.returnValue = 'Leaving the page'; 
+      window.location.reload(true);
     }
 
     // For Safari
     window.location.reload(true);
-    return 'Leaving the page';
+//     return 'Leaving the page';
 };
 
   }
