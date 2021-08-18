@@ -120,15 +120,10 @@ function validate(){
     window.onbeforeunload = function (e) {
     var e = e || window.event;
 
-    // For IE and Firefox
     if (e) {
-//        e.returnValue = 'Leaving the page'; 
-      window.location.reload(true);
+      e.returnValue = 'Leaving the page'; 
     }
-
-    // For Safari
-    window.location.reload(true);
-//     return 'Leaving the page';
+    return 'Leaving the page';
 };
 
   }
