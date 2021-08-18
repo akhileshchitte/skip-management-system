@@ -113,17 +113,19 @@ function validate(){
     alert("Login Successfully");
     return false;
   }else{
+    location.reload();
 //     alert("Login Failed");
-    window.onbeforeunload = function (e) {
-    var e = e || window.event;
+    
+//     window.onbeforeunload = function (e) {
+//     var e = e || window.event;
 
-    // For IE and Firefox
-    if (e) {
-        e.returnValue = 'Leaving the page';
-    }
+//     // For IE and Firefox
+//     if (e) {
+//         e.returnValue = 'Leaving the page';
+//     }
 
-    // For Safari
-    return 'Leaving the page';
+//     // For Safari
+//     return 'Leaving the page';
 };
 //     document.querySelector("#form").action = "https://akhileshchitte.github.io/skip-management-system/";
   }
