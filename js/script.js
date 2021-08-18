@@ -113,7 +113,7 @@ function validate(){
     alert("Login Successfully");
     return false;
   }else{
-    alert("Login Failed");
+//     alert("Login Failed");
     document.querySelector("#form").action = "https://akhileshchitte.github.io/skip-management-system/";
   }
 }
