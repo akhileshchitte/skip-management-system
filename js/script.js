@@ -112,11 +112,7 @@ function validate(){
   if(username == "akhilesh" && password == "Pass@123"){
     alert("Login Successfully");
     return false;
-  }else{
-//     alert("Login Failed");
-    document.querySelector("#form").action = "https://akhileshchitte.github.io/skip-management-system/";
   }
-}
 
 // api
 
