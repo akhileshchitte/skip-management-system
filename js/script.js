@@ -115,6 +115,7 @@ function validate(){
   }else{
     location.reload();
 //     alert("Login Failed");
+    window.location.reload(true);
     
 //     window.onbeforeunload = function (e) {
 //     var e = e || window.event;
